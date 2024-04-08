@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Access Control
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: adihome
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+logging:
+  level:
+    org:
+      springframework:
+        security: INFO
+server:
+  port: 8081
